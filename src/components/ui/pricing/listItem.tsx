@@ -3,7 +3,7 @@ export default function Lists({ lists }: any) {
     <ul className="grid gap-5 mt-5">
       {lists.map((list: any, index: number) => (
         <li key={index}>
-          <div className="flex">
+          <div className="flex justify-start">
             <span className="mr-3">
               <svg
                 width="24"

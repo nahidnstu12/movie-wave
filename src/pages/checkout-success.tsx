@@ -8,7 +8,7 @@ const Checkout = () => {
       <Header />
       <div className="container py-24 flex flex-col gap-8">
         <div>
-          <h2 className="text-xl  font-thin text-gray">
+          <h2 className="text-xl font-thin text-gray">
             Welcome to OneFlix Family 🎊
           </h2>
           <h1 className="text-xxl text-white">Mahmudul Hasan Manik!</h1>

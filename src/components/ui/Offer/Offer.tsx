@@ -6,19 +6,19 @@ const Offer = () => {
     <>
       <h4 className={'text-sm text-primary lg:text-xl'}>Limited Time Offer</h4>
       <h3 className={'text-lg text-white my-5 lg:text-2h2'}>50% Discount</h3>
-      <div className={'flex text-white gap-5 items-center lg:gap-8'}>
+      <div className={'flex justify-start text-white gap-5 items-center lg:gap-8'}>
         <TimeElement value="09" unit="Days" />
         <TimeElement value="20" unit="Hours" />
       </div>
       <div
-        className={'flex text-white gap-5 items-center lg:gap-8 lg:mb-[60px]'}
+        className={'flex justify-start text-white gap-5 items-center lg:gap-8 lg:mb-[60px]'}
       >
         <TimeElement value="12" unit="Minutes" />
         <TimeElement value="25" unit="Seconds" />
       </div>
       <Button
-        className={'w-full lg:w-52'}
-        placeholder={'Lets Go Now'}
+        className={'w-full lg:w-52 mt-5'}
+        placeholder={"Let's Go Now"}
         type={'red'}
         icon={<ImArrowUpRight2 />}
       />

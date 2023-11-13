@@ -7,7 +7,7 @@ export default function CheckoutPage() {
   return (
     <main className="w-full">
       <Head>
-        <title>MovieWave Checkout </title>
+        <title>MovieWave Checkout</title>
         <link rel="icon" href="/images/logo.svg" />
       </Head>
       <Header />
