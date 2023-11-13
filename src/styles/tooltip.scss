@@ -1,0 +1,40 @@
+.tooltip1,
+.tooltip2,
+.tooltip3 {
+  .tooltiptext {
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 35%;
+    margin-left: -60px;
+    background: url(../../public/images/tooltip.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 3rem;
+    width: 7rem;
+  }
+}
+
+.tooltip1,
+.tooltip2,
+.tooltip3 {
+  .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,17 @@
+.content {
+  max-height: 0;
+  transition: max-height .20s;
+}
+
+.toggle:checked {
+  & + .title,
+  & + .title + .content {
+    box-shadow: 3px 3px 6px #191919, -3px 3px 6px #191919;
+  }
+  & + .title + .content {
+    max-height: 500px;
+  }
+  & + .title::before {
+    transform: rotate(90deg) !important;
+  }
+}

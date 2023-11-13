@@ -1,0 +1,74 @@
+@mixin large-screen {
+  @media screen and (min-width: 720px) {
+    @content;
+  }
+}
+
+.react-international-phone-input {
+  height: 52px !important;
+  border-radius: 8px !important;
+  border: 2px solid #f5f1f1 !important;
+  font-size: 16px !important;
+  margin-left: 4px !important;
+  @apply  w-full flex justify-center items-center  placeholder-secondary font-normal;
+  @include large-screen {
+    height: 60px !important;
+    border-radius: 8px !important;
+    font-size: 20px !important;
+    margin-left: 8px !important;
+  }
+}
+.react-international-phone-input.dark-input{
+  background: transparent;
+  border: 2px solid #f5f1f180 !important;
+  color: #fff !important;
+}
+.react-international-phone-dial-code-preview {
+  border: 2px solid #f5f1f1 !important;
+  width: 72px !important;
+  font-size: 16px !important;
+  //border-radius: 8px !important;
+  border-left: none !important;
+  margin: 0 8px 0 -0.1px !important;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  @apply rounded-l-none font-normal;
+  @include large-screen {
+    width: 96px !important;
+    font-size: 20px !important;
+    margin: 0 8px 0 -0.1px !important;
+  }
+}
+.dark-container .react-international-phone-dial-code-preview{
+  background: transparent;
+  border: 2px solid #f5f1f180 !important;
+  color: #fff !important;
+  border-left: none !important;
+  margin: 0 8px 0 -0.1px !important;
+  @apply rounded-l-none font-normal;
+}
+
+.react-international-phone-country-selector button {
+  height: 52px !important;
+  width: 72px !important;
+  border: 2px solid #f5f1f1 !important;
+  //border-radius: 8px;
+  border-right: none !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  @apply rounded-r-none font-normal;
+  @include large-screen {
+    height: 60px !important;
+    width: 96px !important;
+    font-size: 20px !important;
+  }
+
+}
+
+.dark-container .react-international-phone-country-selector button{
+  background: transparent;
+  border: 2px solid #f5f1f180 !important;
+  color: #fff !important;
+  border-right: none !important;
+  @apply rounded-r-none font-normal;
+}
