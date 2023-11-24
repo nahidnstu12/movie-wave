@@ -8,7 +8,7 @@ import Head from 'next/head';
 import PricingTabs from '@/components/ui/pricing';
 import MobileNav from '@/components/ui/mobileNav';
 import StreamingService from '@/components/ui/streamingService';
-import LimitedOfferTimeComponent from '@/components/ui/Offer/LimitedOfferTimeComponent';
+import LimitedOfferTimeComponent from '@/components/ui/Offer/limitedOfferTimeComponent';
 
 export default function Home() {
   return (

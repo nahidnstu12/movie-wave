@@ -11,7 +11,8 @@
     z-index: 1;
     bottom: 150%;
     left: 35%;
-    margin-left: -60px;
+    top: -56px;
+    margin-left: -37px;
     background: url(../../public/images/tooltip.svg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,8 +34,5 @@
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  }
-  &:hover .tooltiptext {
-    visibility: visible;
   }
 }

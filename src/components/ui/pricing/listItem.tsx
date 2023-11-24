@@ -1,6 +1,6 @@
 export default function Lists({ lists }: any) {
   return (
-    <ul className="grid gap-5 mt-5">
+    <ul className="grid gap-4 mt-5">
       {lists.map((list: any, index: number) => (
         <li key={index}>
           <div className="flex justify-start">
@@ -23,7 +23,7 @@ export default function Lists({ lists }: any) {
                 </g>
               </svg>
             </span>
-            <p>{list.text}</p>
+            <p className="text-xxs lg:text-2xs font-normal">{list.text}</p>
           </div>
         </li>
       ))}

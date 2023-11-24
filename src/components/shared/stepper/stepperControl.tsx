@@ -1,3 +1,5 @@
+import React, { MouseEventHandler } from 'react';
+
 export default function StepperControl({
   handleClick,
   currentStep,
@@ -23,3 +25,27 @@ export default function StepperControl({
     </div>
   );
 }
+
+// mobile controls
+export const Buttons = (props: {
+  handleNext: MouseEventHandler<HTMLButtonElement>;
+  handleBack: MouseEventHandler<HTMLButtonElement>;
+}) => {
+  return (
+    <div className="flex">
+      <button
+        className="inline-flex items-center bg-orange-600 hover:bg-orange-700 font-bold py-2 px-4 rounded-lg"
+        onClick={props.handleNext}
+      >
+        <span className="text-white">Next</span>
+      </button>
+
+      <button
+        className="inline-flex items-center bg-orange-600 hover:bg-orange-700 font-bold py-2 px-4 rounded-lg"
+        onClick={props.handleBack}
+      >
+        <span className="text-white">Back</span>
+      </button>
+    </div>
+  );
+};

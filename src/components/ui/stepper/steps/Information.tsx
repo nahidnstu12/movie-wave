@@ -1,6 +1,6 @@
 import Button from '@/components/shared/button';
-import CustomCheckbox from '@/components/shared/input/CustomCheckbox';
-import CustomTextField from '@/components/shared/input/CustomTextField';
+import CustomCheckbox from '@/components/shared/input/customCheckbox';
+import CustomTextField from '@/components/shared/input/customTextField';
 import { getErrorObject } from '@/utils/helpers';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useMemo } from 'react';
@@ -41,8 +41,8 @@ const Information = ({ setCb }: any) => {
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-[864px] w-full bg-dark text-secondary font-medium
-                        flex flex-col gap-2 p-10 justify-center items-start rounded-sm rounded-bl-sm rounded-tr-sm lg:text-xs sm:text-xxs xs:text-xxs"
+        className="max-w-[335px] mx-auto lg:max-w-[864px] w-full bg-body border border-[#D0D0D0] text-secondary font-medium
+                        flex flex-col gap-2 px-4 py-6 lg:p-10 justify-center items-start rounded-sm rounded-bl-sm rounded-tr-sm lg:text-xs sm:text-xxs xs:text-xxs"
       >
         <CustomTextField
           register={register}
@@ -95,8 +95,8 @@ const Information = ({ setCb }: any) => {
           levelText={'Confirm Password'}
           errorInstance={errors}
         />
-        <div className="flex gap-5 text-white">
-          <p className="text-white text-sm">Device: </p>
+        <div className="flex flex-col lg:flex-row gap-2 lg:gap-5  text-secondary">
+          <p className="text-secondary text-3xs lg:text-sm">Device: </p>
           <div className="flex items-center">
             <CustomCheckbox
               register={register}
@@ -118,27 +118,6 @@ const Information = ({ setCb }: any) => {
               errorInstance={errors}
               className={'ml-4'}
             />
-            {/*<CustomCheckbox2*/}
-            {/*  register={register}*/}
-            {/*  control={control}*/}
-            {/*  id={'iPhone'}*/}
-            {/*  levelText={'iPhone'}*/}
-            {/*  errorInstance={errors}*/}
-            {/*/>*/}
-            {/*<CustomCheckbox2*/}
-            {/*  register={register}*/}
-            {/*  control={control}*/}
-            {/*  id={'android'}*/}
-            {/*  levelText={'Android'}*/}
-            {/*  errorInstance={errors}*/}
-            {/*/>*/}
-            {/*<CustomCheckbox2*/}
-            {/*  register={register}*/}
-            {/*  control={control}*/}
-            {/*  id={'television'}*/}
-            {/*  levelText={'Television'}*/}
-            {/*  errorInstance={errors}*/}
-            {/*/>*/}
           </div>
         </div>
 
@@ -146,7 +125,7 @@ const Information = ({ setCb }: any) => {
           placeholder={'Complete'}
           type={'red'}
           icon={<ImArrowUpRight2 />}
-          className="lg:w-[400px] sm:w-full xs:w-full lg:h-[56px] sm:h-[55px] xs:h-[55px] lg:text-xs sm:text-xxs xs:text-xxs mx-auto mt-9"
+          className="lg:w-[400px] sm:w-full xs:w-full lg:h-[56px] sm:h-[55px] xs:h-[55px] lg:text-2xs sm:text-3xxs xs:text-3xxs mx-auto mt-9"
         />
       </form>
     </div>
@@ -156,7 +135,7 @@ const Information = ({ setCb }: any) => {
 const HelperUsernameComponent = () => {
   const usernames = ['manikstk23', 'manik_stk', 'manik_23'];
   return (
-    <div className={'text-white'}>
+    <div className={'text-secondary'}>
       <p className="text-[14px]">Available Username</p>
       <div className="flex gap-1 mt-3">
         {usernames.map((item: any) => (
@@ -180,16 +159,18 @@ const HelperPasswordComponent = () => {
     'at least 6 numbers'
   ];
   return (
-    <div className={'text-white'}>
-      <div className="flex gap-1 flex-wrap">
+    <div className={'text-secondary'}>
+      <div className="inline-flex lg:flex flex-col lg:flex-row gap-[6px] lg:gap-2 flex-wrap">
         {suggestions.map((item: any) => (
           <div
             key={item}
-            className={'bg-[#27ae6033] px-3 py-1 rounded-sm text-xxs'}
+            className={
+              'bg-[#DFEFD4] px-3 py-1 rounded-sm text-2xxxs lg:text-xxs'
+            }
           >
             <img
               className={'mr-1 w-4 h-4 inline'}
-              src={'images/icons/success-circle.svg'}
+              src={'images/icons/check-circle-light.svg'}
               alt={'valid'}
             />
             {item}

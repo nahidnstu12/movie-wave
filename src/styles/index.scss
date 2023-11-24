@@ -14,8 +14,39 @@
 }
 
 body {
-  @apply font-manrope bg-[black];
+  @apply font-manrope;
 }
 
-
-//@import './tooltip.scss';
+.text-md {
+  font-weight: 600;
+}
+.text-xs{
+  font-weight: 400;
+}
+.text-2xs{
+  font-weight: 600;
+}
+.text-3xs{
+  font-weight: 400;
+}
+.text-4xs{
+  font-weight: 600;
+}
+.text-sm{
+  font-weight: 500;
+}
+.text-2sm{
+  font-weight: 400;
+}
+.text-3sm{
+  font-weight: 600;
+}
+.text-xxs{
+  font-weight: 400;
+}
+.text-2xxs{
+  font-weight: 500;
+}
+.text-3xxs{
+  font-weight: 600;
+}

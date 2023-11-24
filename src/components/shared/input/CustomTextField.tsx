@@ -15,21 +15,23 @@ const CustomTextField = ({
   console.log('error', errorObj, isValid);
   return (
     <>
-      <div className={'flex justify-between w-full'}>
-        <p className={'text-white text-sm'}>{levelText}</p>
-        {isRequired && <p className={'text-white text-xxs'}>*required</p>}
+      <div className={'flex justify-between items-center w-full'}>
+        <p className={'text-secondary text-4xs lg:text-3sm'}>{levelText}</p>
+        {isRequired && (
+          <p className={'text-secondary2 text-2xxxs lg:text-2xxs'}>*required</p>
+        )}
       </div>
-      <div className="flex lg:flex-row justify-center w-full items-center gap-4 text-xs font-normal sm:flex-col xs:flex-col mt-3 mb-6">
-        <div className="flex gap-4 w-full flex-col relative">
+      <div className="flex lg:flex-row justify-center w-full items-center gap-4 text-xs font-normal sm:flex-col xs:flex-col mt-1 lg:mt-2 mb-3 lg:mb-4">
+        <div className="flex gap-3 w-full flex-col relative">
           <input
             {...register(id)}
             type={type}
             placeholder={placeholder}
-            className={`lg:h-[60px] sm:h-[55px] xs:h-[55px] w-full px-6 flex justify-center items-center border-border rounded-xm placeholder-secondary bg-transparent border  text-white
-                               lg:text-xs sm:text-xxs xs:text-xxs  ${
+            className={`lg:h-[60px] sm:h-[55px] xs:h-[55px] w-full px-4 lg:px-6 flex justify-center items-center  rounded-xm placeholder-secondary2 bg-transparent border  text-secondary
+                               lg:text-xs sm:text-2xxs xs:text-2xxs placeholder:w-56 lg:placeholder:w-full text-ellipsis  ${
                                  errorObj
                                    ? 'border-primary'
-                                   : 'border-[#f5f1f180]'
+                                   : 'border-[#908F90]'
                                }`}
           />
           {!errorObj ? (
@@ -45,17 +47,15 @@ const CustomTextField = ({
           )}
 
           {errorObj ? (
-            <div className="text-white text-xxs">
+            <div className="text-secondary text-xxs">
               <img
                 className={'inline'}
-                src={'images/icons/error-circle.svg'}
+                src={'images/icons/error-circle-light.svg'}
                 alt={'error'}
               />{' '}
               {errorObj?.message}
             </div>
-          ) : (
-            ''
-          )}
+          ) : null}
           {helperComponent && <div>{helperComponent}</div>}
         </div>
       </div>

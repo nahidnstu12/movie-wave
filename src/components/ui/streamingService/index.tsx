@@ -5,7 +5,7 @@ function StreamingService() {
   return (
     <div className="bg-streaming-service bg-no-repeat xl:bg-cover">
       <div className="pt-[436px] max-w-[864px] px-5 lg:ml-[208px]">
-        <h1 className="text-white text-md lg:text-2h2">
+        <h1 className="text-white text-md lg:text-h2">
           MovieWave - Your All in One Entertainment Destination.
         </h1>
         <p className="text-xxs lg:text-2sm text-white mt-12">

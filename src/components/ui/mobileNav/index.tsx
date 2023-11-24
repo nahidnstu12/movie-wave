@@ -1,6 +1,11 @@
+import { useTheme } from '@/hooks/useTheme';
+
 const MobileNav = () => {
+  const { theme } = useTheme();
   return (
-    <nav className="h-[75px] w-full xs:block sm:hidden lg:hidden fixed z-50 bottom-0 bg-secondary text-white">
+    <nav
+      className={`${theme} h-[75px] w-full xs:block sm:hidden lg:hidden fixed z-50 bottom-0 bg-body text-tertiary`}
+    >
       <ul className="flex flex-row justify-between items-center w-full h-full px-10">
         <li className="flex flex-col justify-center items-center">
           <svg
@@ -18,7 +23,7 @@ const MobileNav = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <p className="text-tiny">Home</p>
+          <p className="text-tiny cursor-pointer">Home</p>
         </li>
         <li className="flex flex-col justify-center items-center">
           <svg
@@ -36,7 +41,7 @@ const MobileNav = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <p className="text-tiny">Tutorial</p>
+          <p className="text-tiny cursor-pointer">Tutorial</p>
         </li>
         <li className="flex flex-col justify-center items-center">
           <svg
@@ -54,7 +59,7 @@ const MobileNav = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <p className="text-tiny">Download</p>
+          <p className="text-tiny cursor-pointer">Download</p>
         </li>
         <li className="flex flex-col justify-center items-center">
           <svg
@@ -72,7 +77,7 @@ const MobileNav = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <p className="text-tiny"> Account </p>
+          <p className="text-tiny cursor-pointer"> Account </p>
         </li>
       </ul>
     </nav>

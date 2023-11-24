@@ -47,12 +47,42 @@ function VariableWidthSlider({className}:any) {
   return (
     <div className={`${className} max-h-[131px] w-auto lg:max-h-[262px] lg:h-auto`} onMouseEnter={()=>{setSliderSpeed(3000)}} onMouseLeave={()=>setSliderSpeed(1500)}>
       <Slider {...settings} ref={sliderRef}>
+        <div className='px-1 lg:px-2 relative'>
+          <div className=" absolute bottom-4 left-4 m-w-[48px]">
+            <img src="/images/slider_logo.svg" alt="" />
+          </div>
           <img className='slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto' src="/images/slider/image1.png" alt="" />
+        </div>
+        <div className='px-1 lg:px-2 relative'>
+          <div className=" absolute bottom-4 left-4 m-w-[48px]">
+            <img src="/images/slider_logo.svg" alt="" />
+          </div>
           <img className='slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto' src="/images/slider/image2.png" alt="" />
+        </div>
+        <div className='px-1 lg:px-2 relative'>
+          <div className=" absolute bottom-4 left-4 m-w-[48px]">
+            <img src="/images/slider_logo.svg" alt="" />
+          </div>
           <img className='slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto' src="/images/slider/image3.png" alt="" />
+        </div>
+        <div className='px-1 lg:px-2 relative'>
+          <div className=" absolute bottom-4 left-4 m-w-[48px]">
+            <img src="/images/slider_logo.svg" alt="" />
+          </div>
           <img className='slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto' src="/images/slider/image4.png" alt="" />
+        </div>
+        <div className='px-1 lg:px-2 relative'>
+          <div className=" absolute bottom-4 left-4 m-w-[48px]">
+            <img src="/images/slider_logo.svg" alt="" />
+          </div>
           <img className='slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto' src="/images/slider/image5.png" alt="" />
+        </div>
+        <div className='px-1 lg:px-2 relative'>
+          <div className=" absolute bottom-4 left-4 m-w-[48px]">
+            <img src="/images/slider_logo.svg" alt="" />
+          </div>
           <img className='slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto' src="/images/slider/image6.png" alt="" />
+        </div>
       </Slider>
     </div>
   );

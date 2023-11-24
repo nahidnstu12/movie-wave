@@ -1,6 +1,6 @@
-import Offer from '@/components/ui/Offer/Offer';
-import Quote from '@/components/ui/Offer/Quote';
-import VerticalSlider from '@/components/ui/slider/VerticalSlider';
+import Offer from '@/components/ui/Offer/offer';
+import Quote from '@/components/ui/Offer/quote';
+import VerticalSlider from '@/components/ui/slider/verticalSlider';
 
 interface IProps {
   type?: any;
@@ -24,7 +24,7 @@ const LimitedOfferTimeComponent = ({ type = 'quote' }: IProps) => {
         <div className="bg-dark lg:bg-transparent p-8 flex-1 justify-center order-2 lg:order-first lg:pl-[88px] lg:py-20 relative z-20">
           {type !== 'offer' ? <Quote /> : <Offer />}
         </div>
-        <div className="flex justify-center gap-10 lg:gap-5 -mt-12 -ml-10 flex-1 max-h-[351px] lg:h-auto overflow-hidden lg:overflow-visible lg:-mt-20 lg:-mr-32">
+        <div className="flex justify-center gap-5 lg:gap-5 -mt-12 -ml-10 flex-1 max-h-[351px] lg:h-auto overflow-hidden lg:overflow-visible lg:-mt-20 lg:-mr-32">
           <VerticalSlider className="rotate-15" />
           <VerticalSlider className="rotate-15" />
         </div>
