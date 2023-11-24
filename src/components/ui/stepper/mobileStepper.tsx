@@ -1,9 +1,7 @@
-import Button from '@/components/shared/button';
 import Information from '@/components/ui/stepper/steps/information';
 import Payment from '@/components/ui/stepper/steps/paymentpage';
 import Phonenumber from '@/components/ui/stepper/steps/phonenumber';
-import React, { MouseEventHandler } from 'react';
-import { useState } from 'react';
+import React, {MouseEventHandler, useState} from 'react';
 
 const steps = [
   { title: 'Phone Number', id: 0 },

@@ -1,7 +1,7 @@
 import Information from '@/components/ui/stepper/steps/information';
 import Payment from '@/components/ui/stepper/steps/paymentpage';
 import Phonenumber from '@/components/ui/stepper/steps/phonenumber';
-import React, { MouseEventHandler, useEffect, useRef, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 
 const MobileStepper = ({ steps, currentStep, setCb }: any) => {
   const [newStep, setNewStep] = useState([]);

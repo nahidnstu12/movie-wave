@@ -1,9 +1,9 @@
-import { useTheme } from '@/hooks/useTheme';
-import { useEffect, useState } from 'react';
-import { FiChevronDown } from 'react-icons/fi';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import Button from '@/components/shared/button';
-import { useRouter } from 'next/router';
+import {useTheme} from '@/hooks/useTheme';
+import {useRouter} from 'next/router';
+import {useState} from 'react';
+import {FiChevronDown} from 'react-icons/fi';
+import {HiOutlineMenuAlt3} from 'react-icons/hi';
 
 const Header = () => {
   const router = useRouter();

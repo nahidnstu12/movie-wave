@@ -1,11 +1,10 @@
 import Button from '@/components/shared/button';
 import CustomCheckbox from '@/components/shared/input/customCheckbox';
 import CustomTextField from '@/components/shared/input/customTextField';
-import { getErrorObject } from '@/utils/helpers';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useMemo } from 'react';
-import { Controller, useForm } from 'react-hook-form';
-import { ImArrowUpRight2 } from 'react-icons/im';
+import {yupResolver} from '@hookform/resolvers/yup';
+import {useMemo} from 'react';
+import {useForm} from 'react-hook-form';
+import {ImArrowUpRight2} from 'react-icons/im';
 import * as yup from 'yup';
 
 const Information = ({ setCb }: any) => {

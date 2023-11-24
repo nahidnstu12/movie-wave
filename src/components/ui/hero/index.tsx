@@ -1,8 +1,5 @@
-import Button from '@/components/shared/button';
-import { SubscribeComponent } from '@/components/ui/hero/subscribeComponent';
-import { ImArrowUpRight2 } from 'react-icons/im';
-import { useState, useEffect } from 'react';
-import { PhoneInput } from 'react-international-phone';
+import {SubscribeComponent} from '@/components/ui/hero/subscribeComponent';
+import {useEffect} from 'react';
 
 const Hero = () => {
   useEffect(() => {
