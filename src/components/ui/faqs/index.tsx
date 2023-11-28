@@ -56,7 +56,7 @@ const AccordionItem = ({ title, content }: any) => {
 
 const Faqs = () => {
   return (
-    <div className="container lg:max-w-5xl mb-40 lg:mb-[200px]">
+    <div className="container lg:max-w-5xl mb-32 lg:mb-[200px]">
       <h2
         className={
           'text-md lg:text-h2 text-white text-center max-w-xl mx-auto mb-8 lg:mb-16'

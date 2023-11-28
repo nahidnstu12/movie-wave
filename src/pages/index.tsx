@@ -22,7 +22,7 @@ export default function Home() {
       <Platforms />
       <StreamingService />
       <SupportPlatform />
-      <div className="container mb-48">
+      <div className="container mb-32">
         <LimitedOfferTimeComponent type={'offer'} />
       </div>
 
@@ -30,7 +30,7 @@ export default function Home() {
       <Faqs />
       <MobileNav />
 
-      <Footer />
+      <Footer isMobileNavShown={true} />
     </main>
   );
 }

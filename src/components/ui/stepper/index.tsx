@@ -2,6 +2,7 @@ import Stepper from '@/components/shared/stepper';
 import Information from '@/components/ui/stepper/steps/information';
 import Payment from '@/components/ui/stepper/steps/paymentpage';
 import Phonenumber from '@/components/ui/stepper/steps/phonenumber';
+import Progress from '@/components/ui/stepper/steps/progress';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
@@ -9,6 +10,7 @@ function Checkout() {
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
   const [cb, setCb] = useState<any>();
+  const [loading, setLoading] = useState(false);
 
   const steps = [
     { title: 'Phone Number', id: 0 },
@@ -42,7 +44,11 @@ function Checkout() {
       });
     }
     if (cb?.type === 'finish') {
-      router.push('/');
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+        router.push('/');
+      }, 1000);
     }
   }, [router, cb]);
 
@@ -53,6 +59,8 @@ function Checkout() {
         <Stepper steps={steps} currentStep={currentStep} setCb={setCb} />
 
         <div className="mt-[140px] mb-[120px]">{displayStep(currentStep)}</div>
+
+        {loading && <Progress />}
       </div>
     </div>
   );

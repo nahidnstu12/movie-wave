@@ -1,0 +1,8 @@
+.bg-streaming-service {
+    background: url(../../public/images/people-watching-mobile.png);
+    background-size: 100%;
+    @screen lg{
+        background: url(../../public/images/people-watching-streaming-service-together-indoors.png);
+        background-size: contain;
+    }
+}

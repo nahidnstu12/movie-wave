@@ -6,8 +6,10 @@
 
 @layer utilities {
   .container {
-    max-width: 1312px;
+    padding: 20px;
+    max-width: 100vw;
     @media (min-width: 1080px) {
+      max-width: 1312px;
       padding-inline: 0;
     }
   }
@@ -15,6 +17,14 @@
 
 body {
   @apply font-manrope;
+}
+
+.text-2sm{
+  line-height: 170%;
+}
+
+.text-h2{
+  line-height: 130%;
 }
 
 .text-md {

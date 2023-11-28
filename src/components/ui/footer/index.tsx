@@ -3,11 +3,13 @@ import { useTheme } from '@/hooks/useTheme';
 const imageContainerClass =
   'w-[40px] h-[40px] rounded-full flex justify-center items-center bg-black ';
 
-const Footer = () => {
+const Footer = ({ isMobileNavShown }: any) => {
   const { theme } = useTheme();
   return (
     <footer
-      className={`${theme} pt-5 mb-[75px] sm:mb-0  lg:pt-24 bg-dark text-tertiary`}
+      className={`${theme} pt-5 ${
+        isMobileNavShown ? 'mb-[75px]' : ''
+      } sm:mb-0  lg:pt-24 bg-dark text-tertiary`}
     >
       <div className={'container grid auto-rows-min lg:grid-cols-3 gap-20'}>
         <div>

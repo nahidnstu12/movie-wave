@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Tabs = ({ color = 'primary' }: any) => {
   const [openTab, setOpenTab] = useState(1);
   return (
-    <div className="container lg:mb-[200px]">
+    <div className="container mb-32 lg:mb-[200px]">
       <div className="flex flex-wrap">
         <div className="w-full">
           <div className="mb-14 lg:-mb-20 max-w-[528px]">
@@ -18,7 +18,11 @@ const Tabs = ({ color = 'primary' }: any) => {
               role="tablist"
             >
               <li className="tooltip1 relative flex-auto m-1 text-center">
-                <span className={`tooltiptext ${(openTab == 1)?'visible':''}`}>Save 39%</span>
+                <span
+                  className={`tooltiptext ${openTab == 1 ? 'visible' : ''}`}
+                >
+                  Save 39%
+                </span>
                 <a
                   className={
                     'text-xxs lg:text-sm text-white font-semibold py-3 lg:py-5 rounded-lg lg:rounded-xl rounded block leading-normal ' +
@@ -38,7 +42,11 @@ const Tabs = ({ color = 'primary' }: any) => {
                 </a>
               </li>
               <li className="tooltip2 relative flex-auto m-1 text-center">
-                <span className={`tooltiptext ${(openTab == 2)?'visible':''}`}>Save 50%</span>
+                <span
+                  className={`tooltiptext ${openTab == 2 ? 'visible' : ''}`}
+                >
+                  Save 50%
+                </span>
                 <a
                   className={
                     'text-xxs lg:text-sm text-white font-semibold py-3 lg:py-5 rounded-lg lg:rounded-xl rounded block leading-normal ' +
@@ -58,7 +66,11 @@ const Tabs = ({ color = 'primary' }: any) => {
                 </a>
               </li>
               <li className="tooltip3 relative flex-auto m-1 text-center">
-                <span className={`tooltiptext ${(openTab == 3)?'visible':''}`}>Save 60%</span>
+                <span
+                  className={`tooltiptext ${openTab == 3 ? 'visible' : ''}`}
+                >
+                  Save 60%
+                </span>
                 <a
                   className={
                     'text-xxs lg:text-sm text-white font-semibold py-3 lg:py-5 rounded-lg lg:rounded-xl  rounded block leading-normal ' +

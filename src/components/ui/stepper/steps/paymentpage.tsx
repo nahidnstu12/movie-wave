@@ -32,14 +32,14 @@ export default function Payment({ setCb }: any) {
         variant="transparent-variant"
         className="p-0 text-secondary shadow-none border border-[#D0D0D0]"
       >
-        <div className="flex flex-col lg:flex-row py-8 lg:py-6 px-6 lg:px-10 items-start lg:items-center">
+        <div className="flex flex-col lg:flex-row py-6 lg:py-6 px-6 lg:px-10 items-start lg:items-center">
           <div className="flex mb-3 lg:mb-3">
             <img src="/images/solo.svg" alt="" />
             <h2 className="text-[20px] lg:text-[28px] ml-3 -tracking-[1.12px]">
               Solo yearly package
             </h2>
           </div>
-          <div className="rounded-xxl py-2 px-5 ml-3 text-[14px] lg:text-xxs bg-secondary/10 tracking-normal mb-8 lg:mb-0">
+          <div className="rounded-xxl py-2 px-5 ml-3 text-[14px] lg:text-xxs bg-secondary/10 tracking-normal mb-4 lg:mb-0">
             1 Device Stream At a Time
           </div>
           <div className="lg:ml-auto">
@@ -73,8 +73,8 @@ export default function Payment({ setCb }: any) {
               </span>
             </div>
           </div>
-          <div className="px-0  pt-6">
-            <div className="flex flex-col gap-5 justify-center">
+          <div className="px-0  pt-5">
+            <div className="flex flex-col gap-3 justify-center">
               <div className="flex gap-3 items-center">
                 <div className="rounded-full min-w-[22px] min-h-[22px] text-[14px] bg-primary flex items-center justify-center text-body">
                   1
@@ -134,7 +134,7 @@ export default function Payment({ setCb }: any) {
                 </div>
               </div>
             </div>
-            <div className="mt-[54px]">
+            <div className="mt-10 lg:mt-[54px]">
               <div className="flex flex-wrap lg:flex-nowrap gap-3 items-center">
                 <img src="/images/checkout/bkash-light.svg" alt="bkash" />
                 <div className="text-2xs lg:text-3sm ">Your Bkash Number</div>

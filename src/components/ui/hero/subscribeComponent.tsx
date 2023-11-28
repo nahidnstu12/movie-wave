@@ -29,7 +29,7 @@ export const SubscribeComponent = () => {
           Mobile
         </p>
         <p
-          className={`flex-1 flex justify-center items-center cursor-pointer text-body ${
+          className={`flex-1 flex justify-center items-center cursor-pointer text-body  ${
             tab === 'email' ? 'active-subscribe-tab' : ''
           }`}
           onClick={() => setTab('email')}
@@ -50,12 +50,14 @@ export const SubscribeComponent = () => {
                 defaultCountry="bd"
                 disableDialCodeAndPrefix={true}
                 showDisabledDialCodeAndPrefix
-                className={''}
+                className={'w-full'}
                 inputClassName={''}
-                countries={[
-                  ['Bangladesh', 'bd', '880'],
-                  ['India', 'in', '91', '.....-.....'],
-                  ['United States', 'us', '1', '(...) ...-....', 0]
+                countries={[['Bangladesh', 'bd', '880']]}
+                flags={[
+                  {
+                    iso2: 'bd',
+                    src: '/images/flags/Bd.svg'
+                  }
                 ]}
                 value={phone}
                 onChange={(phone) => setPhone(phone)}

@@ -1,10 +1,10 @@
 import Button from '@/components/shared/button';
 import CustomCheckbox from '@/components/shared/input/customCheckbox';
 import CustomTextField from '@/components/shared/input/customTextField';
-import {yupResolver} from '@hookform/resolvers/yup';
-import {useMemo} from 'react';
-import {useForm} from 'react-hook-form';
-import {ImArrowUpRight2} from 'react-icons/im';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useMemo } from 'react';
+import { useForm } from 'react-hook-form';
+import { ImArrowUpRight2 } from 'react-icons/im';
 import * as yup from 'yup';
 
 const Information = ({ setCb }: any) => {
@@ -40,7 +40,7 @@ const Information = ({ setCb }: any) => {
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="max-w-[335px] mx-auto lg:max-w-[864px] w-full bg-body border border-[#D0D0D0] text-secondary font-medium
+        className="mx-auto lg:max-w-[864px] w-full bg-body border border-[#D0D0D0] text-secondary font-medium
                         flex flex-col gap-2 px-4 py-6 lg:p-10 justify-center items-start rounded-sm rounded-bl-sm rounded-tr-sm lg:text-xs sm:text-xxs xs:text-xxs"
       >
         <CustomTextField

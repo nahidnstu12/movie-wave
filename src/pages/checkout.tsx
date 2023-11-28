@@ -13,11 +13,7 @@ export default function CheckoutPage() {
       </Head>
       <Header />
       <CheckoutProcess />
-      {/*<MobileStepper />*/}
       <Checkout />
-      {/*<div className={'mt-10'}>*/}
-      {/*  <Information />*/}
-      {/*</div>*/}
 
       <Footer />
     </main>

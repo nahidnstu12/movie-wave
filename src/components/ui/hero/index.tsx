@@ -1,5 +1,5 @@
-import {SubscribeComponent} from '@/components/ui/hero/subscribeComponent';
-import {useEffect} from 'react';
+import { SubscribeComponent } from '@/components/ui/hero/subscribeComponent';
+import { useEffect } from 'react';
 
 const Hero = () => {
   useEffect(() => {
@@ -139,8 +139,8 @@ const Hero = () => {
             {/*  />*/}
             {/*</div>*/}
           </div>
-          <h1 className="lg:max-w-[800px] max-w-[80%] xs:font-extrabold sm:font-extrabold mb-20 lg:text-2h1 sm:text-xxl xs:text-xxl">
-            Streaming Everything InOne
+          <h1 className="lg:max-w-[800px] max-w-[80%] xs:font-extrabold sm:font-extrabold mb-5 lg:-mb-20 lg:text-2h1 sm:text-xxl xs:text-xl">
+            Streaming Everything In One
           </h1>
           <SubscribeComponent />
         </div>

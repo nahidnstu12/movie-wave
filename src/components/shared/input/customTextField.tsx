@@ -8,11 +8,9 @@ const CustomTextField = ({
   placeholder,
   id,
   errorInstance,
-  isValid,
   helperComponent
 }: any) => {
   let errorObj = getErrorObject(id, errorInstance);
-  console.log('error', errorObj, isValid);
   return (
     <>
       <div className={'flex justify-between items-center w-full'}>

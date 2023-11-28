@@ -73,7 +73,7 @@ module.exports = {
         { lineHeight: '130%', fontWeight: '400', letterSpacing: '-0.96px' }
       ],
       sm: ['24px', { lineHeight: '120%', letterSpacing: '0' }],
-      '2sm': ['24px', { lineHeight: '170%', letterSpacing: '0' }],
+      '2sm': ['24px', { letterSpacing: '0' }],
       '3sm': ['24px', { lineHeight: '130%', letterSpacing: '-0.96px' }],
 
       xs: ['20px', { lineHeight: '120%', letterSpacing: '-0.8px' }],
@@ -137,8 +137,6 @@ module.exports = {
         170: '170%'
       },
       backgroundImage: {
-        'streaming-service':
-          "url('/images/people-watching-streaming-service-together-indoors.png')",
         checkmark: "url('/images/icons/checkmark.svg')",
         'checkmark-light': "url('/images/icons/checkmark-light.svg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'

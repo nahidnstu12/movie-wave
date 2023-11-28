@@ -1,7 +1,7 @@
 import Information from '@/components/ui/stepper/steps/information';
 import Payment from '@/components/ui/stepper/steps/paymentpage';
 import Phonenumber from '@/components/ui/stepper/steps/phonenumber';
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const MobileStepper = ({ steps, currentStep, setCb }: any) => {
   const [newStep, setNewStep] = useState([]);
@@ -82,8 +82,9 @@ const MobileStepper = ({ steps, currentStep, setCb }: any) => {
 
   console.log({ currentStep, newStep });
   return (
-    <nav aria-label="Progress">
-      <ol role="list" className="overflow-hidden">
+    <nav aria-label="Progress ">
+      {/*<ol role="list" className="overflow-hidden">*/}
+      <ol role="list" className="pt-16">
         {newStep.map((step: any, stepIdx) => (
           <li key={stepIdx} className="pb-10 relative">
             <div className="group relative flex items-start flex-col">
@@ -116,11 +117,11 @@ const MobileStepper = ({ steps, currentStep, setCb }: any) => {
                 </div>
               </div>
 
-              <div className=" flex min-w-0 flex-col ">
+              <div className=" flex flex-col ">
                 <div
-                  className={`w-full mt-5 transition-all ease-in-out duration-1000 flex flex-col  ${
-                    stepIdx === currentStep - 1 ? 'max-h-full' : 'max-h-0'
-                  }`}
+                  className={`w-full mt-5 transition-all ease-in-out duration-1000 flex flex-col ${
+                    stepIdx === 2 ? 'pr-3' : ''
+                  } ${stepIdx === currentStep - 1 ? 'max-h-full' : 'max-h-0'}`}
                 >
                   {stepIdx === currentStep - 1 ? (
                     <div

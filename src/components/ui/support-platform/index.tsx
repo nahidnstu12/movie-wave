@@ -4,8 +4,7 @@ import { ImArrowUpRight2 } from 'react-icons/im';
 const SupportPlatform = () => {
   return (
     <div
-      className="container -z-10 relative flex lg:flex-row md:flex-col xs:flex-col h-full lg:mt-[-100px]
-                    md:mt-[-50px] xs:mt-[-50px] lg:pb-[0px] md:pb-[100px] xs:pb-[100px]"
+      className="container -z-10 relative flex lg:flex-row md:flex-col xs:flex-col h-full lg:mt-[-100px] lg:pb-[0px] md:pb-[100px] xs:pb-[100px]"
     >
       <div
         className="lg:w-[80%] lg:pb-[250px] lg:mb-[-100px] md:w-[100%] xs:w-[100%] lg:ml-[-15%] lg:pt-[250px] 
