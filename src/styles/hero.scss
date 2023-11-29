@@ -1,3 +1,3 @@
 .active-subscribe-tab{
-    @apply bg-white rounded-tr-sm rounded-tl-sm border-b border-primary;
+    @apply bg-white rounded-tr-sm rounded-tl-sm after:content-[''] after:bg-primary after:h-[1px] after:bottom-0 after:left-auto after:right-auto after:w-[74px] after:absolute;
 }

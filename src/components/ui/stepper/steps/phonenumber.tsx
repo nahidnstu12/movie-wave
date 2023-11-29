@@ -11,7 +11,7 @@ const Phonenumber = ({ setCb }: any) => {
     e.preventDefault();
     setError(''); // Reset error message
 
-    if (phone.length < 10) {
+    if (phone.length < 10 || !phone) {
       setError('Phone number is required');
       return;
     } else if (!/^\+8801[3-9]\d{8}$/.test(phone)) {
@@ -49,7 +49,7 @@ const Phonenumber = ({ setCb }: any) => {
           <p className={'text-secondary2 text-2xxxs lg:text-xxs'}>*required</p>
         </div>
 
-        <div className="flex lg:flex-row justify-center w-full items-center gap-4 text-xs font-normal sm:flex-col xs:flex-col">
+        <div className="flex  justify-center w-full items-center gap-4 text-xs font-normal sm:flex-col xs:flex-col">
           <div className="flex gap-4 w-full">
             <PhoneInput
               defaultCountry="bd"
@@ -61,13 +61,24 @@ const Phonenumber = ({ setCb }: any) => {
               flags={[
                 {
                   iso2: 'bd',
-                  src: '/images/flags/Bd.svg'
+                  // src: '/images/flags/Bd.svg'
+                  src: 'https://raw.githubusercontent.com/nahidnstu12/movie-wave/master/public/images/flags/BD.svg'
                 }
               ]}
               value={phone}
               onChange={(phone) => setPhone(phone)}
             />
           </div>
+          {error ? (
+            <div className="text-secondary text-xxs w-full">
+              <img
+                className={'inline'}
+                src={'images/icons/error-circle-light.svg'}
+                alt={'error'}
+              />{' '}
+              {error}
+            </div>
+          ) : null}
         </div>
         <Button
           placeholder={'Next'}

@@ -69,7 +69,7 @@ const Hero = () => {
         <div className="flex flex-col gap-0">
           <div
             id="scroller"
-            className="h-[65px] overflow-hidden mb-5 lg:mt-0 sm:mt-0 xs:mt-10"
+            className="h-[65px] overflow-hidden mb-2 lg:mb-5 lg:mt-0 sm:mt-0 xs:mt-10"
           >
             <div id="container">
               {animatedImage.map((item: string, index: number) => (
@@ -81,65 +81,8 @@ const Hero = () => {
                 />
               ))}
             </div>
-            {/*<div id="container">*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/HBO Max.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'HBO Max'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/Apple TV.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'Apple TV'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/Disney.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'Disney'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/Hot Star.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'Disney'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/Hulu.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'HBO Max'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/Netflix.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'Hulu'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/One.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'Netflix'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/Oneflix.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'One'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/Prime Video.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'Prime Video'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/ZEE.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'ZEE'}*/}
-            {/*  />*/}
-            {/*  <img*/}
-            {/*    src="/images/hero/HBO Max.svg"*/}
-            {/*    className="h-[60px] mb-2"*/}
-            {/*    alt={'HBO Max'}*/}
-            {/*  />*/}
-            {/*</div>*/}
           </div>
-          <h1 className="lg:max-w-[800px] max-w-[80%] xs:font-extrabold sm:font-extrabold mb-5 lg:-mb-20 lg:text-2h1 sm:text-xxl xs:text-xl">
+          <h1 className="lg:max-w-[789px] max-w-[210px] xs:font-extrabold sm:font-extrabold lg:mb-[77px] mb-10 lg:text-2h1 sm:text-xxl xs:text-xl">
             Streaming Everything In One
           </h1>
           <SubscribeComponent />

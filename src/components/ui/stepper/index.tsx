@@ -55,7 +55,7 @@ function Checkout() {
   return (
     <div className="container xs:hidden sm:block lg:block mx-auto rounded-2xl bg-body pb-2 md:w-1/2">
       {/* Stepper */}
-      <div className="horizontal mt-[80px] px-64">
+      <div className="horizontal mt-[80px] px-64 ml-2">
         <Stepper steps={steps} currentStep={currentStep} setCb={setCb} />
 
         <div className="mt-[140px] mb-[120px]">{displayStep(currentStep)}</div>

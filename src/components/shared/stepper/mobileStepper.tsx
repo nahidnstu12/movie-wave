@@ -117,10 +117,10 @@ const MobileStepper = ({ steps, currentStep, setCb }: any) => {
                 </div>
               </div>
 
-              <div className=" flex flex-col ">
+              <div className=" flex flex-col w-full">
                 <div
                   className={`w-full mt-5 transition-all ease-in-out duration-1000 flex flex-col ${
-                    stepIdx === 2 ? 'pr-3' : ''
+                    stepIdx === 2 ? '' : ''
                   } ${stepIdx === currentStep - 1 ? 'max-h-full' : 'max-h-0'}`}
                 >
                   {stepIdx === currentStep - 1 ? (

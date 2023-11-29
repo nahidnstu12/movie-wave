@@ -32,7 +32,7 @@ const Information = ({ setCb }: any) => {
   console.log('errors component', errors);
   return (
     <div
-      className={'p-[1px] rounded-sm w-[calc(100%-1px)] overflow-hidden'}
+      className={'p-[1px] rounded-sm overflow-hidden'}
       style={{
         backgroundImage:
           'linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1))'
@@ -136,7 +136,7 @@ const HelperUsernameComponent = () => {
   return (
     <div className={'text-secondary'}>
       <p className="text-[14px]">Available Username</p>
-      <div className="flex gap-1 mt-3">
+      <div className="flex flex-wrap gap-1 mt-3">
         {usernames.map((item: any) => (
           <div
             key={item}

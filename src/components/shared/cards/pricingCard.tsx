@@ -43,13 +43,13 @@ function PricingCard({
       <div className="px-6 lg:px-10">
         {list}
         <Button
-          className="w-full mt-8 !text-[18px] lg:text-2xs font-semibold xs:p-0"
+          className="w-full h-[56px] lg:h-[69px] mt-8 !text-[18px] lg:text-2xs font-semibold xs:p-0"
           placeholder={buttonText}
           type={'transparent'}
           icon={<ImArrowUpRight2 />}
         />
         <Button
-          className="w-full h-[69px] mt-3 !text-[18px] lg:text-2xs font-semibold xs:p-0"
+          className="w-full h-[56px] lg:h-[69px] mt-3 !text-[18px] lg:text-2xs font-semibold xs:p-0"
           placeholder={'Get Started With 6 Month'}
           type={'red'}
           icon={<ImArrowUpRight2 />}
