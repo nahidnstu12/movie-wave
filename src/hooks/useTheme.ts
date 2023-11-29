@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
-const lightUrl = ['/checkout', '/checkout-success'];
-const darkUrl = ['/'];
+const lightUrl = ['/checkout'];
+const darkUrl = ['/', '/checkout-success'];
 
 export const useTheme = () => {
   const router = useRouter();

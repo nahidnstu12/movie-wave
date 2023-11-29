@@ -39,7 +39,7 @@ const Phonenumber = ({ setCb }: any) => {
     >
       <form
         onSubmit={(e) => handleSubmit(e)}
-        className="max-w-[335px] lg:max-w-[864px] w-full bg-body text-secondary font-medium
+        className=" lg:max-w-[864px] w-full bg-body text-secondary font-medium
                         flex flex-col gap-2 p-4 lg:p-10 justify-center items-start rounded-sm rounded-bl-sm rounded-tr-sm lg:text-xs sm:text-xxs xs:text-xxs"
       >
         <div className={'flex justify-between w-full'}>
@@ -56,7 +56,7 @@ const Phonenumber = ({ setCb }: any) => {
               disableDialCodeAndPrefix={true}
               showDisabledDialCodeAndPrefix
               className={'w-full'}
-              inputClassName={''}
+              inputClassName={`${error ? 'error' : ''}`}
               countries={[['Bangladesh', 'bd', '880']]}
               flags={[
                 {

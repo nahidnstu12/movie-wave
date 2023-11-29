@@ -17,6 +17,9 @@
     font-size: 20px !important;
     margin-left: 8px !important;
   }
+  &.error {
+    border: 1px solid #E50914 !important;
+  }
 }
 .react-international-phone-input.dark-input {
   background: transparent;

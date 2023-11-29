@@ -46,7 +46,8 @@ const Hero = () => {
     <div className="lg:h-[90vh] sm:h-[95vh] xs:h-[100vh] min-h-[700px] max-h-[1000px] container">
       <div className="absolute lg:top-0 xs:top-10 right-0 -z-20 overflow-hidden">
         <img
-          src="./images/hero.png"
+          // src="./images/hero.png"
+          src="./images/hero.webp"
           alt="Your Image"
           className="max-w-[1450px] lg:w-full xs:w-fit lg:h-[1450px] xs:h-[105vh]"
         />
