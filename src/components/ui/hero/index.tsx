@@ -66,8 +66,8 @@ const Hero = () => {
           }}
         ></div>
       </div>
-      <div className="text-white font-extrabold w-[1312px] max-w-full m-auto h-full flex justify-start items-center">
-        <div className="flex flex-col gap-0">
+      <div className="text-white font-extrabold w-[1312px] max-w-full m-auto h-full flex justify-start items-center relative">
+        <div className="w-full flex flex-col gap-0">
           <div
             id="scroller"
             className="h-[65px] overflow-hidden mb-2 lg:mb-5 lg:mt-0 sm:mt-0 xs:mt-10"

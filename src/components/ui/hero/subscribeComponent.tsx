@@ -18,7 +18,7 @@ export const SubscribeComponent = () => {
     });
   };
   return (
-    <div>
+    <div className={`lg:w-full`}>
       <div className="lg:h-[60px] sm:h-[60px] xs:h-[45px] lg:max-w-[322px] sm:max-w-[322px] xs:max-w-[220px] bg-[#F5F1F1] text-xs flex rounded-tr-sm rounded-tl-sm text-secondary font-medium lg:text-2xs sm:text-xxs xs:text-xxs">
         <p
           className={`flex-1 flex justify-center items-center cursor-pointer text-body relative ${
@@ -76,7 +76,7 @@ export const SubscribeComponent = () => {
       {tab === 'email' && (
         <form
           onSubmit={(e) => handlePhoneSubmit(e)}
-          className="lg:h-[157px] sm:h-[200px] xs:h-[200px] max-w-[686px] w-full bg-white text-dark
+          className="lg:h-[157px] sm:h-[200px] xs:h-[200px]  lg:max-w-[686px] w-full bg-white text-dark
                         flex flex-col gap-2 px-4 lg:px-10 justify-center items-start rounded-br-sm rounded-bl-sm rounded-tr-sm lg:text-2xs sm:text-xxs xs:text-xxs"
         >
           <p className="text-xxs">Email</p>
@@ -85,7 +85,7 @@ export const SubscribeComponent = () => {
               <input
                 type="email"
                 placeholder={'youremail@fakemail.com'}
-                className="lg:h-[60px] sm:h-[55px] xs:h-[55px] w-[293px] px-6 flex justify-center items-center border-2 border-border rounded-xm placeholder-dark
+                className="lg:h-[60px] sm:h-[55px] xs:h-[55px] w-full px-6 flex justify-center items-center border-2 border-border rounded-xm placeholder-secondary2
                                lg:text-xs sm:text-xxs xs:text-xxs"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

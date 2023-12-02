@@ -83,9 +83,7 @@ const Platforms = () => {
             className="w-full h-full flex justify-center items-center lg:p-5 sm:p-3 xs:p-2"
           />
         </div>
-        <div
-          className="w-4 h-4 bg-slate-500 rounded-full"
-        ></div>
+        <div className="w-1.5 h-1.5 lg:w-4 lg:h-4 bg-slate-500 rounded-full"></div>
         <div
           id="group-2"
           className="bubble lg:w-[110px] sm:w-[110px] xs:w-[40px] lg:h-[110px] sm:h-[110px] xs:h-[40px] bg-white rounded-full -mt-10"
@@ -95,9 +93,7 @@ const Platforms = () => {
             className="w-full h-full flex justify-center items-center lg:p-5 sm:p-3 xs:p-2"
           />
         </div>
-        <div
-          className="w-4 h-4 bg-primary rounded-full"
-        ></div>
+        <div className="w-1.5 h-1.5 lg:w-4 lg:h-4 bg-primary rounded-full"></div>
         <div
           id="group-3"
           className="bubble lg:w-[110px] sm:w-[110px] xs:w-[40px] lg:h-[110px] sm:h-[110px] xs:h-[40px] bg-white rounded-full mt-10"
@@ -143,9 +139,7 @@ const Platforms = () => {
             className="w-full h-full flex justify-center items-center lg:p-5 sm:p-3 xs:p-2"
           />
         </div>
-        <div
-          className="w-4 h-4 bg-white rounded-full"
-        ></div>
+        <div className="w-1.5 h-1.5 lg:w-4 lg:h-4 bg-white rounded-full"></div>
         <div
           id="group-2"
           className="bubble lg:w-[110px] sm:w-[110px] xs:w-[40px] lg:h-[110px] sm:h-[110px] xs:h-[40px] bg-white rounded-full -mt-4"
@@ -195,9 +189,7 @@ const Platforms = () => {
             className="w-full h-full flex justify-center items-center lg:p-5 sm:p-3 xs:p-2"
           />
         </div>
-        <div
-          className="w-4 h-4 bg-white rounded-full"
-        ></div>
+        <div className="w-1.5 h-1.5 lg:w-4 lg:h-4 bg-white rounded-full"></div>
         <div
           id="group-2"
           className="bubble lg:w-[110px] sm:w-[110px] xs:w-[40px] lg:h-[110px] sm:h-[110px] xs:h-[40px] bg-white rounded-full -mt-40"
@@ -299,9 +291,7 @@ const Platforms = () => {
             className="w-full h-full flex justify-center items-center lg:p-5 sm:p-3 xs:p-2"
           />
         </div>
-        <div
-          className="w-4 h-4 bg-primary rounded-full"
-        ></div>
+        <div className="w-1.5 h-1.5 lg:w-4 lg:h-4 bg-primary rounded-full"></div>
         <div
           id="group-3"
           className="bubble lg:w-[110px] sm:w-[110px] xs:w-[40px] lg:h-[110px] sm:h-[110px] xs:h-[40px] bg-white rounded-full mt-24"
@@ -311,9 +301,7 @@ const Platforms = () => {
             className="w-full h-full flex justify-center items-center lg:p-5 sm:p-3 xs:p-2"
           />
         </div>
-        <div
-          className="w-4 h-4 bg-white rounded-full"
-        ></div>
+        <div className="w-1.5 h-1.5 lg:w-4 lg:h-4 bg-white rounded-full"></div>
         <div
           id="group-1"
           className="bubble lg:w-[110px] sm:w-[110px] xs:w-[40px] lg:h-[110px] sm:h-[110px] xs:h-[40px] bg-white rounded-full mr-20"

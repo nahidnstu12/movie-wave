@@ -7,7 +7,7 @@
 .react-international-phone-input {
   height: 52px !important;
   border-radius: 8px !important;
-  border: 1px solid #D0D0D0 !important;
+  border: 2px solid #F5F1F1 !important;
   font-size: 16px !important;
   margin-left: 4px !important;
   @apply w-full flex justify-center items-center  placeholder-secondary font-normal;
@@ -20,6 +20,10 @@
   &.error {
     border: 1px solid #E50914 !important;
   }
+  &:focus{
+    border-color: #141414 !important;
+    outline: none !important;
+  }
 }
 .react-international-phone-input.dark-input {
   background: transparent;
@@ -27,7 +31,7 @@
   color: #fff !important;
 }
 .react-international-phone-dial-code-preview {
-  border: 1px solid #D0D0D0 !important;
+  border: 2px solid #F5F1F1 !important;
   width: 72px !important;
   font-size: 16px !important;
   //border-radius: 8px !important;
@@ -54,7 +58,7 @@
 .react-international-phone-country-selector button {
   height: 52px !important;
   width: 72px !important;
-  border: 1px solid #D0D0D0 !important;
+  border: 2px solid #F5F1F1 !important;
   //border-radius: 8px;
   border-right: none !important;
   border-top-left-radius: 8px !important;

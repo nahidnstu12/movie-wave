@@ -149,6 +149,8 @@ module.exports = {
     createThemes({
       light: {
         primary: '#E50914',
+        primaryHover: '#AB0911',
+        primaryFocused: '#4D0206',
         body: '#fff',
         tertiary: '#000',
         white: '#FFFFFF',
@@ -163,6 +165,8 @@ module.exports = {
       },
       dark: {
         primary: '#E50914',
+        primaryHover: '#AB0911',
+        primaryFocused: '#4D0206',
         body: '#000',
         tertiary: '#FFF',
         white: '#FFFFFF',

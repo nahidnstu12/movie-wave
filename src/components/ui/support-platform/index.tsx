@@ -3,12 +3,10 @@ import { ImArrowUpRight2 } from 'react-icons/im';
 
 const SupportPlatform = () => {
   return (
-    <div
-      className="container -z-10 relative flex lg:flex-row md:flex-col xs:flex-col h-full lg:mt-[-100px] lg:pb-[0px] md:pb-[100px] xs:pb-[100px]"
-    >
+    <div className="container  relative flex lg:flex-row md:flex-col xs:flex-col h-full lg:mt-[-100px] lg:pb-[0px] md:pb-[100px] xs:pb-[100px]">
       <div
         className="lg:w-[80%] lg:pb-[250px] lg:mb-[-100px] md:w-[100%] xs:w-[100%] lg:ml-[-15%] lg:pt-[250px] 
-                        md:pt-[200px] xs:pt-[100px] flex justify-center items-center"
+                        md:pt-[200px] xs:pt-[100px] flex justify-center items-center -z-10"
         style={{
           background: 'radial-gradient(ellipse, #E50914 -100%, black 75%)'
         }}
@@ -34,6 +32,7 @@ const SupportPlatform = () => {
         </p>
 
         <Button
+          // onClick={() => console.log('hello button clicked')}
           placeholder={'Let’s Go Now'}
           type={'red'}
           icon={<ImArrowUpRight2 />}
