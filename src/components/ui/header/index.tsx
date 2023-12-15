@@ -1,9 +1,9 @@
 import Button from '@/components/shared/button';
-import { useTheme } from '@/hooks/useTheme';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-import { FiChevronDown } from 'react-icons/fi';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import {useTheme} from '@/hooks/useTheme';
+import {useRouter} from 'next/router';
+import {useState} from 'react';
+import {FiChevronDown} from 'react-icons/fi';
+import {HiOutlineMenuAlt3} from 'react-icons/hi';
 
 const Header = () => {
   const router = useRouter();
@@ -108,7 +108,7 @@ const Header = () => {
             onClick={() => setHamburgerMenu((humburgerMenu) => !humburgerMenu)}
           />
           {hamburgerMenu && (
-            <ul className="w-full flex flex-col justify-start items-start gap-5 absolute left-0 top-[58px] p-10 pt-5 h-screen bg-body">
+            <ul className="w-full flex flex-col justify-start items-start gap-5 absolute left-0 top-[58px] p-10 pt-5 h-fit bg-body">
               <li
                 onClick={() =>
                   dropDown === 1 ? setDropDown(0) : setDropDown(1)

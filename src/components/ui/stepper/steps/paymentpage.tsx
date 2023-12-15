@@ -165,8 +165,7 @@ export default function Payment({ setCb }: any) {
             </div>
             <div className="mt-5 lg:mt-9 flex justify-center tracking-[0.64px] leading-[110%]">
               <Button
-                // className="w-full text-3xxs lg:text-3sm max-w-[416px]"
-                className="lg:w-[400px] sm:w-full xs:w-full lg:h-[56px] sm:h-[55px] xs:h-[55px] lg:text-xs sm:text-3xxs xs:text-3xxs mx-auto mt-4 lg:mt-9 font-semibold"
+                className="w-full text-3xxs lg:text-3sm max-w-[416px]"
                 placeholder={'Confirm Payment'}
                 type={'red'}
                 icon={<ImArrowUpRight2 />}

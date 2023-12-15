@@ -26,7 +26,7 @@ const CustomTextField = ({
             type={type}
             placeholder={placeholder}
             className={`lg:h-[60px] sm:h-[55px] xs:h-[55px] w-full px-4 lg:px-6 flex justify-center items-center  rounded-xm placeholder-secondary2 bg-transparent border  text-secondary
-                               lg:text-xs sm:text-2xxs xs:text-2xxs placeholder:w-56 lg:placeholder:w-full text-ellipsis focus:border-tertiary ${
+                               lg:text-xs sm:text-2xxs xs:text-2xxs placeholder:w-56 lg:placeholder:w-full text-ellipsis  ${
                                  errorObj
                                    ? 'border-primary'
                                    : 'border-[#908F90]'

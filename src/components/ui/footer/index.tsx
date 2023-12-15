@@ -29,12 +29,12 @@ const Footer = ({ isMobileNavShown }: any) => {
           </p>
           <div className={'flex gap-6'}>
             <div
-              className={`${imageContainerClass} hover:bg-[url('/images/icons/footerIconHoverBgImage.svg')]`}
+              className={`${imageContainerClass} hover:bg-footer-hover-icon`}
             >
               <img src={'/images/icons/facebook1.png'} alt={'facebook-icon'} />
             </div>
             <div
-              className={`${imageContainerClass} hover:bg-[url('/images/icons/footerIconHoverBgImage.svg')]`}
+              className={`${imageContainerClass} hover:bg-footer-hover-icon`}
             >
               <img
                 src={'/images/icons/instagram1.png'}
@@ -42,7 +42,7 @@ const Footer = ({ isMobileNavShown }: any) => {
               />
             </div>
             <div
-              className={`${imageContainerClass} hover:bg-[url('/images/icons/footerIconHoverBgImage.svg')]`}
+              className={`${imageContainerClass} hover:bg-footer-hover-icon`}
             >
               <img src={'/images/icons/youtube1.png'} alt={'youtube-icon'} />
             </div>

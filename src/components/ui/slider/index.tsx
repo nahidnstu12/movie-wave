@@ -1,116 +1,71 @@
-import { useRef, useState } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
+import React, { useEffect, useRef } from 'react';
+import { ImageComponent } from '@/components/ui/slider/imageComponent';
 
-function VariableWidthSlider({ className }: any) {
-  const sliderRef = useRef(null);
-  const [sliderSpeed, setSliderSpeed] = useState(3500);
+function VariableWidthSlider({ className, imageResource}: any) {
+  const marqueeRef = useRef<any>();
+  const marqueeInnerRef = useRef<any>();
+  const numberRef = useRef(0);
+  const speedFactorRef = useRef(1);
 
-  const settings = {
-    className: 'slider variable-width',
-    dots: true,
-    infinite: true,
-    centerMode: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    variableWidth: true,
-    autoplay: true,
-    speed: sliderSpeed,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    pauseOnHover: false,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 896,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          initialSlide: 2,
-          speed: 3000,
-          infinite: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          speed: 3000,
-          infinite: true
-        }
+  useEffect(() => {
+    const {width} = marqueeInnerRef.current.getBoundingClientRect();
+    console.log(marqueeInnerRef.current.getBoundingClientRect());
+    const targetNumber = width*2;
+    const intervalTime = 10;
+    const incrementBy = 1;
+    let count = 0;
+    const intervalId = setInterval(incrementNumber, intervalTime);
+
+    function incrementNumber() {
+      count = count + numberRef.current + incrementBy * speedFactorRef.current;
+      if (count >= targetNumber) {
+        count = 0;
       }
-    ]
+      marqueeRef.current.style.willChange = `transform`;
+      marqueeRef.current.style.transform = `translateX(${-count}px)`;
+    }
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  const reduceSpeed = () => {
+    speedFactorRef.current = 0.5;
+  };
+
+  const increaseSpeed = () => {
+    speedFactorRef.current = 1;
   };
 
   return (
-    <div
-      className={`${className} max-h-[131px] w-auto lg:max-h-[262px] lg:h-auto`}
-      // onMouseEnter={()=>{setSliderSpeed(5000)}} onMouseLeave={()=>setSliderSpeed(3500)}
-    >
-      <Slider {...settings} ref={sliderRef}>
-        <div className="px-1 lg:px-2 relative">
-          <div className=" absolute bottom-4 left-4 max-w-[24px] lg:max-w-[48px]">
-            <img src="/images/slider_logo.png" alt="" />
-          </div>
-          <img
-            className="slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto"
-            src="/images/slider/image1.png"
-            alt=""
-          />
+    <div className={`${className} max-h-[131px] w-auto lg:max-h-[262px] lg:h-auto`}>
+      <div
+        ref={marqueeRef}
+        className="loop flex gap-4"
+        onMouseEnter={() => {
+          reduceSpeed();
+        }}
+        onMouseLeave={() => {
+          increaseSpeed();
+        }}
+      >
+        <div ref={marqueeInnerRef} className="marquee flex w-full gap-2 lg:gap-4">
+          {imageResource?.map((resource: any) => (
+            <ImageComponent resource={resource} key={resource.id} />
+          ))}
         </div>
-        <div className="px-1 lg:px-2 relative">
-          <div className=" absolute bottom-4 left-4 max-w-[24px] lg:max-w-[48px]">
-            <img src="/images/slider_logo.png" alt="" />
-          </div>
-          <img
-            className="slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto"
-            src="/images/slider/image2.png"
-            alt=""
-          />
+        <div className="marquee flex w-full gap-2 lg:gap-4">
+          {imageResource?.map((resource: any) => (
+            <ImageComponent resource={resource} key={resource.id} />
+          ))}
         </div>
-        <div className="px-1 lg:px-2 relative">
-          <div className=" absolute bottom-4 left-4 max-w-[24px] lg:max-w-[48px]">
-            <img src="/images/slider_logo.png" alt="" />
-          </div>
-          <img
-            className="slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto"
-            src="/images/slider/image3.png"
-            alt=""
-          />
+        <div className="marquee flex w-full gap-2 lg:gap-4">
+          {imageResource?.map((resource: any) => (
+            <ImageComponent resource={resource} key={resource.id} />
+          ))}
         </div>
-        <div className="px-1 lg:px-2 relative">
-          <div className=" absolute bottom-4 left-4 max-w-[24px] lg:max-w-[48px]">
-            <img src="/images/slider_logo.png" alt="" />
-          </div>
-          <img
-            className="slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto"
-            src="/images/slider/image4.png"
-            alt=""
-          />
-        </div>
-        <div className="px-1 lg:px-2 relative">
-          <div className=" absolute bottom-4 left-4 max-w-[24px] lg:max-w-[48px]">
-            <img src="/images/slider_logo.png" alt="" />
-          </div>
-          <img
-            className="slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto"
-            src="/images/slider/image5.png"
-            alt=""
-          />
-        </div>
-        <div className="px-1 lg:px-2 relative">
-          <div className=" absolute bottom-4 left-4 max-w-[24px] lg:max-w-[48px]">
-            <img src="/images/slider_logo.png" alt="" />
-          </div>
-          <img
-            className="slick-slide w-auto max-h-[131px] lg:max-h-[262px] lg:h-auto"
-            src="/images/slider/image6.png"
-            alt=""
-          />
-        </div>
-      </Slider>
+      </div>
     </div>
   );
 }

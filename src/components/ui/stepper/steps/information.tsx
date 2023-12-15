@@ -136,7 +136,7 @@ const HelperUsernameComponent = () => {
   return (
     <div className={'text-secondary'}>
       <p className="text-[14px]">Available Username</p>
-      <div className="flex flex-wrap gap-1 mt-3">
+      <div className="flex gap-1 mt-3">
         {usernames.map((item: any) => (
           <div
             key={item}

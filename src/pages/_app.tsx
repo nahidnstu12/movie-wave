@@ -7,6 +7,7 @@ import '@/styles/tooltip.scss';
 import '@/styles/stepper.scss';
 import '@/styles/checkbox.scss';
 import '@/styles/peoplewatching.scss'
+import '@/styles/infinite.scss'
 
 import type { AppProps } from 'next/app';
 

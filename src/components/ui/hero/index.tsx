@@ -46,8 +46,7 @@ const Hero = () => {
     <div className="lg:h-[90vh] sm:h-[95vh] xs:h-[100vh] min-h-[700px] max-h-[1000px] container">
       <div className="absolute lg:top-0 xs:top-10 right-0 -z-20 overflow-hidden">
         <img
-          // src="./images/hero.png"
-          src="./images/hero.webp"
+          src="./images/hero.png"
           alt="Your Image"
           className="max-w-[1450px] lg:w-full xs:w-fit lg:h-[1450px] xs:h-[105vh]"
         />
@@ -66,8 +65,8 @@ const Hero = () => {
           }}
         ></div>
       </div>
-      <div className="text-white font-extrabold w-[1312px] max-w-full m-auto h-full flex justify-start items-center relative">
-        <div className="w-full flex flex-col gap-0">
+      <div className="text-white font-extrabold w-[1312px] max-w-full m-auto h-full flex justify-start items-center">
+        <div className="flex flex-col gap-0">
           <div
             id="scroller"
             className="h-[65px] overflow-hidden mb-2 lg:mb-5 lg:mt-0 sm:mt-0 xs:mt-10"
