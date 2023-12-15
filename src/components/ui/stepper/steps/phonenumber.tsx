@@ -61,8 +61,8 @@ const Phonenumber = ({ setCb }: any) => {
               flags={[
                 {
                   iso2: 'bd',
-                  src: '/images/flags/Bd.svg'
-                  // src: 'https://raw.githubusercontent.com/nahidnstu12/movie-wave/master/public/images/flags/BD.svg'
+                  // src: '/images/flags/Bd.svg'
+                  src: 'https://raw.githubusercontent.com/nahidnstu12/movie-wave/master/public/images/flags/BD.svg'
                 }
               ]}
               value={phone}

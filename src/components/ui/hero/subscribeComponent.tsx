@@ -56,7 +56,7 @@ export const SubscribeComponent = () => {
                 flags={[
                   {
                     iso2: 'bd',
-                    src: '/images/flags/Bd.svg'
+                    src: 'https://raw.githubusercontent.com/nahidnstu12/movie-wave/master/public/images/flags/BD.svg'
                   }
                 ]}
                 value={phone}

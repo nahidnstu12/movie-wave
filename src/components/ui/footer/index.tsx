@@ -28,22 +28,16 @@ const Footer = ({ isMobileNavShown }: any) => {
             streaming services.
           </p>
           <div className={'flex gap-6'}>
-            <div
-              className={`${imageContainerClass} hover:bg-footer-hover-icon`}
-            >
+            <div className={`${imageContainerClass} hover:bg-[#3D3D3D]`}>
               <img src={'/images/icons/facebook1.png'} alt={'facebook-icon'} />
             </div>
-            <div
-              className={`${imageContainerClass} hover:bg-footer-hover-icon`}
-            >
+            <div className={`${imageContainerClass} hover:bg-[#3D3D3D]`}>
               <img
                 src={'/images/icons/instagram1.png'}
                 alt={'instagram-icon'}
               />
             </div>
-            <div
-              className={`${imageContainerClass} hover:bg-footer-hover-icon`}
-            >
+            <div className={`${imageContainerClass} hover:bg-[#3D3D3D]`}>
               <img src={'/images/icons/youtube1.png'} alt={'youtube-icon'} />
             </div>
           </div>
