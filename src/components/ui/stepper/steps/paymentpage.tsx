@@ -29,7 +29,7 @@ export default function Payment({ setCb }: any) {
   return (
     <form className="flex flex-col" onSubmit={handleSubmit(onSubmit)}>
       <Card
-        variant="transparent-variant"
+        variant="dark-variant"
         className="p-0 text-secondary shadow-none border border-[#D0D0D0]"
       >
         <div className="flex flex-col lg:flex-row py-6 lg:py-6 px-6 lg:px-10 items-start lg:items-center">

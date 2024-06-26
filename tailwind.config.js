@@ -138,7 +138,8 @@ module.exports = {
       },
       backgroundImage: {
         checkmark: "url('/images/icons/checkmark.svg')",
-        'checkmark-light': "url('/images/icons/checkmark-light.svg')",
+        'checkmark-dark': "url('/images/icons/checkmark-light.svg')",
+        'checkmark-light': "url('/images/icons/checkmark.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))'
         // 'available-devices': "url('/images/devices.png')",
       }

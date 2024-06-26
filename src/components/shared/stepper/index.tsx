@@ -88,7 +88,7 @@ const Stepper = ({ steps, currentStep, setCb }: any) => {
               </span>
             ) : (
               <span className={``}>
-                <img src={'/images/icons/pending-check.svg'} alt={'check'} />{' '}
+                <img src={'/images/icons/pending-check.svg'} alt={'check'} className={'bg-secondary rounded-full'} />{' '}
               </span>
             )}
           </div>

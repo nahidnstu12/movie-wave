@@ -164,7 +164,7 @@ const HelperPasswordComponent = () => {
           <div
             key={item}
             className={
-              'bg-[#DFEFD4] px-3 py-1 rounded-sm text-2xxxs lg:text-xxs'
+              'bg-[#DFEFD4] text-dark px-3 py-1 rounded-sm text-2xxxs lg:text-xxs'
             }
           >
             <img

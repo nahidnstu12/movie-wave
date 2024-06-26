@@ -1,5 +1,6 @@
 import Button from '@/components/shared/button';
 import {useTheme} from '@/hooks/useTheme';
+import Link from "next/link";
 import {useRouter} from 'next/router';
 import {useState} from 'react';
 import {FiChevronDown} from 'react-icons/fi';
@@ -88,7 +89,7 @@ const Header = () => {
             </li>
 
             <li className="whitespace-nowrap">Content Request</li>
-            <li>Price</li>
+            <Link href={"/checkout"}><li>Checkout</li></Link>
             <li>Affiliate</li>
           </ul>
 
@@ -164,7 +165,7 @@ const Header = () => {
               </li>
 
               <li className="whitespace-nowrap">Content Request</li>
-              <li>Price</li>
+              <Link href={"/checkout"}><li>Checkout</li></Link>
               <li>Affiliate</li>
 
               <Button

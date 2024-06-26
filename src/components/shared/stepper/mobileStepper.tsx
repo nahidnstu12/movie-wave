@@ -80,7 +80,7 @@ const MobileStepper = ({ steps, currentStep, setCb }: any) => {
     }
   };
 
-  console.log({ currentStep, newStep });
+  // console.log({ currentStep, newStep });
   return (
     <nav aria-label="Progress ">
       {/*<ol role="list" className="overflow-hidden">*/}
@@ -95,7 +95,7 @@ const MobileStepper = ({ steps, currentStep, setCb }: any) => {
                     return setCb(() => ({ type: 'next', step: step.stepno }));
                   }}
                 >
-                  <span className={``}>
+                  <span>
                     {step.completed ? (
                       <img
                         src={'/images/icons/complete-check-mbl.svg'}
@@ -105,6 +105,7 @@ const MobileStepper = ({ steps, currentStep, setCb }: any) => {
                       <img
                         src={'/images/icons/pending-check-mbl.svg'}
                         alt={'check'}
+                        className={'bg-white rounded-full'}
                       />
                     )}
                   </span>
